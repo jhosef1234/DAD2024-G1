@@ -14,7 +14,8 @@ public class Cliente {
     private Integer id;
     private String nombre;
     private String dni;
-    private String telefono;
+    private String celular;
     private String correo;
     private String direccion;
+    private String genero;
 }
