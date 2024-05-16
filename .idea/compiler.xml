@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ms-config-server" />
         <module name="ms-cliente" />
+        <module name="ms-auth" />
         <module name="ms-pedido-service" />
         <module name="ms-registry-server" />
         <module name="ms-catalogo" />
@@ -23,6 +24,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo" options="-parameters" />
+      <module name="ms-auth" options="-parameters" />
       <module name="ms-catalogo" options="-parameters" />
       <module name="ms-cliente" options="-parameters" />
       <module name="ms-cliente1 (1)" options="-parameters" />
