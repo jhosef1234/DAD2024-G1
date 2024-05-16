@@ -10,7 +10,6 @@ import java.util.Base64;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-
 @Component
 public class JwtProvider    {
     @Value("${jwt.secret}")
@@ -19,6 +18,7 @@ public class JwtProvider    {
     protected void init() {
         secret = Base64.getEncoder().encodeToString(secret.getBytes());
     }
+
     public String createToken(AuthUser authUser) {
         Map<String, Object> claims = new HashMap<>();
         claims = Jwts.claims().setSubject(authUser.getUserName());
@@ -51,4 +51,3 @@ public class JwtProvider    {
         }
     }
 }
-
