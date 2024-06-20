@@ -12,17 +12,18 @@ import org.springframework.context.annotation.Bean;
 @EnableFeignClients
 public class MsPedidoServiceApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(MsPedidoServiceApplication.class, args);
-    }
-    @Bean
-    public OpenAPI custumOpenAPI(){
-        return new OpenAPI().info(new Info()
-                .title("OPEN API MICROSERVICIO PEDIDO")
-                .version("0.0.1")
-                .description("Servicio web cliente")
-                .termsOfService("http://swagger.io/terms")
-                .license(new License().name("Apache 2.0").url("http://springdoc.org"))
-        );
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(MsPedidoServiceApplication.class, args);
+	}
+	@Bean
+	public OpenAPI custumOpenAPI() {
+		return new OpenAPI().info(new Info()
+				.title("OPEN API MICROSERVICIO PEDIDO")
+				.version("0.0.1")
+				.description("servivio web pedido")
+				.termsOfService("http://swagger.io/terms")
+				.license(new License().name("Apache 2.0")
+						.url("http://springdoc.org"))
+		);
+	}
 }

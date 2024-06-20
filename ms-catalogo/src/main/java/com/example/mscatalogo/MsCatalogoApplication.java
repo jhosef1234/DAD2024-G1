@@ -13,14 +13,16 @@ public class MsCatalogoApplication {
     public static void main(String[] args) {
         SpringApplication.run(MsCatalogoApplication.class, args);
     }
+
     @Bean
-    public OpenAPI custumOpenAPI(){
+    public OpenAPI custumOpenAPI() {
         return new OpenAPI().info(new Info()
                 .title("OPEN API MICROSERVICIO CATALOGO")
                 .version("0.0.1")
-                .description("Servicio web catalogo")
+                .description("servivio web catalogo")
                 .termsOfService("http://swagger.io/terms")
-                .license(new License().name("Apache 2.0").url("http://springdoc.org"))
+                .license(new License().name("Apache 2.0")
+                        .url("http://springdoc.org"))
         );
     }
 }

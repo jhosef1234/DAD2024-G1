@@ -11,11 +11,11 @@ spring:
         git:
           uri: https://github.com/jhosef1234/DAD2024-G1.git # ruta del repositorio git
           searchPaths: config-data
+          default-label: main
           #username:
           #password:
-          default-label: main
 
   security:
     user:
-      password: 123456
       name: root
+      password: 123456
